@@ -1,0 +1,2 @@
+rootProject.name='d3p3android'
+include ':app'
