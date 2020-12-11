@@ -1,4 +1,5 @@
 package com.example.d3p3android.model.remote
+import android.util.Log
 import com.example.d3p3android.utils.Resource
 import retrofit2.Response
 abstract class BaseDataSource {

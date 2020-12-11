@@ -1,8 +1,7 @@
-package com.example.d3p3android.dependency-injection
+package com.example.d3p3android.di
 
-import android.content.Context
-import com.example.d3p3android.data.remote.StarWarsDataSource
 import com.example.d3p3android.data.remote.IStarWarsService
+import com.example.d3p3android.data.remote.StarWarsDataSource
 import com.example.d3p3android.data.repository.StarWarsRepository
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
@@ -10,7 +9,6 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ApplicationComponent
-import dagger.hilt.android.qualifiers.ApplicationContext
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton

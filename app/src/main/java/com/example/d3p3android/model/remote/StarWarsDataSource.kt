@@ -1,5 +1,6 @@
 package com.example.d3p3android.data.remote
 
+import com.example.d3p3android.model.remote.BaseDataSource
 import javax.inject.Inject
 
 class StarWarsDataSource @Inject constructor(

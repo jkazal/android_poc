@@ -1,9 +1,9 @@
-import retrofit2.Call
-import retrofit2.http.GET
-import java.nio.file.Path
-import jdk.nashorn.internal.codegen.CompilerConstants.Call
-import jdk.nashorn.internal.runtime.PropertyDescriptor.GET
+package com.example.d3p3android.data.remote
 
+import com.example.d3p3android.data.entity.StarWarsCharacter
+import retrofit2.http.GET
+import retrofit2.Response
+import retrofit2.http.Path
 
 
 interface IStarWarsService {
@@ -12,8 +12,8 @@ interface IStarWarsService {
 //    lasting operations such as getting our data from the internet are being executed.
 
     @GET("people")
-    suspend fun getAllPeople(): Response<List<StarWarsCharacter?>>?
+    suspend fun getAllPeople(): Response<List<StarWarsCharacter>>
 
     @GET("people/{id}")
-    suspend fun getPeopleById(@Path("id") id: Int): Response<StarWarsCharacter?>?
+    suspend fun getPeopleById(@Path("id") id: Int): Response<StarWarsCharacter>
 }
